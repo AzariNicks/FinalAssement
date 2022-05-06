@@ -1,0 +1,30 @@
+Results for the extraLargeArray which contains -- 100000 differnet numbers including 0
+insert 1.0560954 s
+append 3.2247 ms
+
+ 
+Results for the largeArray which contains -- 10000 differnet numbers including 0
+insert 9.9599 ms
+append 537 μs
+
+Results for the mediumArray which contains -- 1000 differnet numbers including 0
+insert 200.4 μs
+append 142 μs
+
+Results for the smallArray which contains -- 100 differnet numbers including 0
+insert 49.6 μs
+append 103.5 μs
+
+Results for the tinyArray which contains -- 10 differnet numbers including 0 
+insert 38.2 μs
+append 94.6 μs
+
+The double insert function scales up
+as the number of items in the array increase
+the more times the function has to do push it, The double append 
+function works very simmilar so it scales simmilar instead of pushing 
+it unshift which does what the shift does but puts it in the back of the array 
+whereas push moves it to the front. the append function is the faster one on 
+bigger arrays. i think the reason is becuase unshift() is placing the new element at
+the beggining of the array where as push has to read through all the  elements in the array
+
